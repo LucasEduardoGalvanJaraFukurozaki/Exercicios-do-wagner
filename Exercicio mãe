@@ -1,0 +1,17 @@
+//13 Crie um programa que imprima a tabuada de multiplicação de um número fornecido pelo usuário.//
+#include <stdio.h>
+
+int main() {
+    int tabuada;
+    int n;
+    int i = 1;
+    
+    printf("Escolha um número: ");
+    scanf("%d", &n);
+    while(i <= 10){
+        tabuada = n * i;
+        i++;
+        printf("%d\n" , tabuada);
+    }
+    return 0;
+}

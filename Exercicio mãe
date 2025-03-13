@@ -42,3 +42,24 @@ int main(){
     
 return 0;
 }
+
+/*Crie um programa que peça a altura e o peso do usuário e calcule o índice de massa corporal (IMC).*/
+#include <stdio.h>
+
+int main()
+{
+    float alt;
+    float peso;
+    float imc;
+    
+    printf("Qual a sua altura?: ");
+    scanf("%f", &alt);
+    printf("Qual o seu peso?: ");
+    scanf("%f",&peso);
+    imc = peso / (alt * alt);
+    printf("o IMC é: %f " , imc);
+    
+    
+
+    return 0;
+}

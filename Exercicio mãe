@@ -17,20 +17,26 @@ int main() {
 }
 
 /*Faça um programa que conte de 1 a 100 e imprima "Fizz" para números divisíveis por 3 e "Buzz" para números divisíveis por 5. Para números que são divisíveis por ambos, imprima "FizzBuzz".*/
+
+#include <stdio.h>
 int main(){
     
     int n;
-    int i;
+    int i = 1;
     
-    while(i <= 100, n = i % 3){
-        if(i % 3){
+    while(i <= 100){
+        
+        n = n + i;
+        i++;
+        
+        if(i % 3 == 0){
             printf("Fizz");
         }
-        else if(i % 5){
+        else if(i % 5 == 0){
             printf("Buzz");
         }
-        else if(i % 3, i % 5){
-            printf("FizzBuzz");
+        else{
+            printf("FIZBUZZ");
         }
     }
     
